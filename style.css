@@ -1,0 +1,765 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+@media screen and (max-width: 1176px) {
+    .wrapper {
+        padding: 0 41px 0 43px;
+    }
+}
+
+header {
+    color: #fff;
+    padding: 30px 0 31px;
+    background: rgba(32, 83, 80, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 24px 0 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 18px 0 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+div img {
+    width: 100%;
+    max-width: 698px;
+}
+
+.menu a {
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 6.5%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu a:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 0 45px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu a {
+        line-height: 22px;
+        font-size: 0.9rem;
+    }
+    .menu a:not(:last-child)::after {
+        width: 25px;
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        line-height: 18px;
+        font-size: 0.75rem;
+    }
+    .menu a:not(:last-child)::after {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .menu a:not(:last-child)::after {
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 2.25rem;
+        line-height: 53px;
+        margin-bottom: 20px;
+    }
+}
+
+.text {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+@media screen and (max-width: 1024px) {
+    .text {
+        font-size: 1.1rem;
+        line-height: 26px;
+    }
+}
+
+.baner {
+    background-image: url("../img/parkhotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 450px 0 30px;
+}
+
+.baner p {
+    line-height: 33px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 495px;
+    margin: 0 auto 60px;
+    font-size: 1.17rem;
+}
+
+.baner .booking-link {
+    font-weight: 500;
+    line-height: 23px;
+    display: block;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: #AE5F3D;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.baner a:hover {
+    color: green;
+    background-color: rgb(211, 248, 5);
+    transition: 1.5s, liner;
+}
+
+.arrow::after {
+    content: "";
+    width: 57px;
+    height: 23px;
+    display: block;
+    background-image: url(../icons/icon.svg);
+    margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .baner {
+        padding: 353px 0 25px;
+    }
+    .baner p {
+        line-height: 24px;
+        margin-bottom: 45px;
+        font-size: 0.9rem;
+    }
+    .baner .booking-link {
+        font-size: 0.85rem;
+        line-height: 20px;
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+    }
+    .arrow::after {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .baner {
+        padding-top: 249px;
+    }
+    .baner p {
+        margin-bottom: 35px;
+    }
+    .arrow::after {
+        margin-top: 27px;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 47px;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 1.75rem;
+        line-height: 41px;
+    }
+}
+
+.about-us h2 {
+    margin: 30px 0 37px;
+}
+
+.about-us p {
+    margin: 0 auto;
+    max-width: 608px;
+}
+
+.about-us img {
+    max-width: 617px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us h2 {
+        margin: 25px 0 32px;
+    }
+}
+
+.entertaiment {
+    background-color: #F5F5F5;
+}
+
+.entertaiment .text {
+    line-height: 31px;
+    max-width: 520px;
+    margin: 37px auto 36px;
+}
+
+.entertaiment-type {
+    display: inline-block;
+    width: calc((100% - 24px * 2) / 3);
+    background: #FFFFFF;
+    border: 2px solid #F1F1F1;
+    border-radius: 30px;
+    padding: 30px 5px;
+    max-width: 444px;
+}
+
+.entertaiment-type p {
+    font-size: 1rem;
+}
+
+.entertaiment-type:not(:last-child) {
+    margin-right: 24px;
+}
+
+.entertaiment-type h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 25px 0 20px;
+}
+
+.entertaiment-type i {
+    font-size: 7.5rem;
+    color: #AE5F3D;
+}
+
+@media screen and (max-width: 1109px) {
+    .entertaiment-type p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .entertaiment-type p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .entertaiment .text {
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+    .entertaiment-type {
+        width: calc((100% - 20px * 2) / 3);
+    }
+    .entertaiment-type:not(:last-child) {
+        margin-right: 20px;
+    }
+    .entertaiment-type p {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    .entertaiment-type h3 {
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .entertaiment-type p {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 922px) {
+    .entertaiment-type p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 889px) {
+    .entertaiment-type p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .entertaiment-type p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .entertaiment-type p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 797px) {
+    .entertaiment-type p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .entertaiment i {
+        font-size: 6.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .entertaiment .text {
+        margin: 32px auto 35px;
+    }
+    .entertaiment-type {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .entertaiment-type p {
+        font-size: 1.15rem;
+        line-height: 32px;
+    }
+    .entertaiment-type:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+    .entertaiment-type h3 {
+        font-size: 1.15rem;
+        line-height: 27px;
+    }
+}
+
+.apartments .text {
+    width: 100%;
+    margin: 30px auto 55px;
+}
+
+.apartments-type {
+    display: inline-block;
+    width: calc((100% - 48px * 2) / 3);
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    max-width: 698px;
+}
+
+.apartments-type:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.apartments-type::after {
+    content: "";
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.apartments-type:first-of-type::after {
+    content: "от 7 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(2)::after {
+    content: "от 23 т.р./сутки";
+    width: 132px;
+}
+
+.apartments-type:nth-of-type(2)::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F24040;
+    color: #fff;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 50px;
+    text-align: center;
+}
+
+.apartments-type:last-of-type::after {
+    content: "от 13 т.р./сутки";
+    width: 132px;
+}
+
+.apartments-type h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 35px;
+    margin: 25px 0 15px;
+}
+
+.apartments-type p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 21px;
+    color: #474747;
+}
+
+@media screen and (max-width: 1024px) {
+    .apartments-type {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .apartments-type:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+    .apartments-type h3 {
+        margin: 15px 0;
+    }
+    .apartments-type p {
+        font-size: 1.15rem;
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apartments-type:not(:last-child) {
+        margin: 0 auto 80px;
+    }
+    .apartments-type h3 {
+        margin: 20px 0;
+    }
+    .apartments-type p {
+        font-size: 1.1rem;
+        line-height: 26px;
+    }
+}
+
+.booking {
+    background-color: #F5F5F5;
+}
+
+form {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 29px;
+    padding: 100px 121px 100px 119px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 30px;
+    margin: 0 auto;
+    max-width: 1016px;
+}
+
+form .text {
+    width: 100%;
+    margin: 30px auto 50px;
+}
+
+@media screen and (max-width:1024px) {
+    form {
+        font-size: 1.1rem;
+        line-height: 26px;
+        padding: 80px 68px 80px 67px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    form {
+        padding: 70px 52px 70px 53px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    form {
+        padding: 50px 32px 50px 33px;
+    }
+}
+
+label.contacts {
+    display: block;
+}
+
+.contacts {
+    margin-bottom: 20px;
+    color: #474747;
+    text-align: left;
+}
+
+.information {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 60px;
+    padding-left: 35px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    border: 1px solid #AE5F3D;
+}
+
+.information:focus {
+    outline-color: #67756e;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .information {
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .information {
+        font-size: 0.7rem;
+    }
+}
+
+form div {
+    text-align: left;
+    color: #474747;
+}
+
+form div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    form h2 {
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+}
+
+div input {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    div input {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div input {
+        margin-right: 13px;
+    }
+}
+
+button {
+    display: block;
+    height: 60px;
+    width: 100%;
+    margin: 40px auto 0;
+    background: #AE5F3D;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    transition: 1s, liner;
+    max-width: 404px;
+}
+
+button:hover {
+    background-color: #d4e29e;
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        height: 48px;
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        margin: 54px auto 0;
+    }
+}
+
+.back {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #abddeb;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.back i {
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+footer {
+    padding: 70px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 0;
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+    h4 {
+        font-size: 1.35rem;
+        line-height: 32px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h4 {
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+}
+
+footer .bottom-menu {
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 6.5%;
+    width: 150px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-top: 0.7px solid #737373;
+    border-bottom: 0.7px solid #737373;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .bottom-menu {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    footer .bottom-menu {
+        font-size: 0.75rem;
+        line-height: 16px;
+    }
+}
+
+.bottom-menu a {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.bottom-menu a:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+    .bottom-menu a:not(:last-child) {
+        margin-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-menu a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.social {
+    margin: 35px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .social {
+        margin: 25px auto 0;
+    }
+}
+
+.social a {
+    color: #000;
+}
+
+.social a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social i:hover {
+    transform: scale(1.5);
+}
